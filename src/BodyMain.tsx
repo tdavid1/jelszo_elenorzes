@@ -9,6 +9,6 @@ export function Main(){
     return <main>
       <input type="password" onInput={e => {setpassword(e.currentTarget.value)}}/>
       <p>Az aktuális jelszó erősége:</p>
-      <Hibauzenet hibauzenetek = {password.length<8 || test ? ['A jelszó nem elég biztonságos']: []} biztonsagose = {password.length>8 && test} menyirenembiz={password.length>8}/>
+      <Hibauzenet hibauzenetek = {password.length<8 || test ? ['A jelszó nem elég biztonságos']: []} biztonsagose = {password.length>8 || test} menyirenembiz={password.length>8}/>
     </main>;
 }
